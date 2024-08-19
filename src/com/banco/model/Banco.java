@@ -1,6 +1,7 @@
 package com.banco.model;
 
 import java.util.LinkedHashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Banco {
@@ -71,4 +72,16 @@ public class Banco {
             System.out.println("Sem contas nesse banco.");
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Banco banco = (Banco) o;
+        return Objects.equals(contas, banco.contas) && Objects.equals(nome, banco.nome) && Objects.equals(conta, banco.conta);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(contas, nome, conta);
+    }
 }
