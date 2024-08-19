@@ -33,11 +33,10 @@ public abstract class Conta implements IConta {
     }
 
     public void imprimirInfosComuns(){
-        System.out.println("Extrato do cliente " + cliente.getNome());
-        System.out.println("Agência: " + this.agencia);
-        System.out.println("CC: " + this.numero);
-        System.out.println("O extrato do cliente é " + this.saldo);
-
+        System.out.println(String.format("Titular: %s", this.cliente.getNome()));
+        System.out.println(String.format("Agência: %d", this.agencia));
+        System.out.println(String.format("Número: %d", this.numero));
+        System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
     @Override

@@ -19,7 +19,7 @@ public class Banco {
         contas.add(new ContaPoupanca(new Cliente(nome)));
     }
 
-    public Conta buscarContaPorNome (String nome) {
+    private Conta buscarContaPorNome (String nome) {
         Conta contaParaBuscar = null;
         for(Conta c : contas)
             if(c.getCliente().getNome().equals(nome)){
@@ -64,7 +64,8 @@ public class Banco {
         if(!contas.isEmpty()) {
             for(Conta c : contas)
                 System.out.println("Cliente: " + c.getCliente().getNome() +
-                        " | Conta: " + c.getNumero());
+                        " | Conta: " + c.getNumero() +
+                        " | Agência: " + c.getAgencia());
         }
         else
             System.out.println("Sem contas nesse banco.");
