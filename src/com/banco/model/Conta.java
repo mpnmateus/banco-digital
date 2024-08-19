@@ -18,12 +18,25 @@ public class Conta implements IConta {
         this.numero = SEQUENCIAL++;
     }
 
-    public void sacar(double valor){};
+    public void sacar(double valor){}
 
-    public void depositar(double valor){};
+    public void depositar(double valor){}
 
-    public void transferir(double valor, Conta contaDestino){};
+    public void transferir(double valor, Conta contaDestino){}
 
-    public void imprimirExtrato(){};
+    public void imprimirExtrato(){
+        System.out.println("O extrato do cliente ");
+    }
 
+    public int getAgencia() {
+        return agencia;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
 }
