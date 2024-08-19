@@ -32,7 +32,7 @@ public abstract class Conta implements IConta {
         contaDestino.depositar(valor);
     }
 
-    public void imprimirExtrato(){
+    public void imprimirInfosComuns(){
         System.out.println("Extrato do cliente " + cliente.getNome());
         System.out.println("Agência: " + this.agencia);
         System.out.println("CC: " + this.numero);
