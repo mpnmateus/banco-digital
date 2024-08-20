@@ -51,7 +51,7 @@ public class TesteAppBanco {
                     nomeCliente = scanner.next();
                     System.out.println("Digite o valor do saque: ");
                     int valorDeposito = scanner.nextInt();
-                    banco.sacar(nomeCliente, valorDeposito);
+                    banco.depositar(nomeCliente, valorDeposito);
                     break;
 
                 case 5:
@@ -80,5 +80,6 @@ public class TesteAppBanco {
         }
         System.out.println("Você saiu do programa.");
 
+        scanner.close();
     }
 }
