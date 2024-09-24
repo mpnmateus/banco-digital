@@ -3,7 +3,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .out/
-/src/target
+/target
 /banco-digital.iml
 
 ### Eclipse ###
