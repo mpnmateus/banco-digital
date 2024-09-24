@@ -4,7 +4,7 @@ out/
 !**/src/test/**/out/
 .out/
 /target
-/banco-digital.iml
+/*.iml
 
 ### Eclipse ###
 .apt_generated
