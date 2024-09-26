@@ -12,7 +12,7 @@ public class ContaTeste {
     @BeforeEach
     public void setUp(){
         conta = new ContaCorrente(new Cliente("Mateus"));
-        conta.setSaldo(1000);
+        conta.depositar(1000);
     }
 
     @Test
