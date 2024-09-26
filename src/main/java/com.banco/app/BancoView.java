@@ -3,7 +3,7 @@ package com.banco.app;
 import com.banco.model.Banco;
 import java.util.Scanner;
 
-public class TesteAppBanco {
+public class BancoView {
     public static void main(String[] args) {
         Banco banco = new Banco();
         Scanner scanner = new Scanner(System.in);
