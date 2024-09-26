@@ -64,4 +64,8 @@ public abstract class Conta implements IConta {
     public double getSaldo() {
         return saldo;
     }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 }
