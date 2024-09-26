@@ -21,6 +21,11 @@ public class ContaTeste {
         Assertions.assertEquals(500, conta.getSaldo(), "O saldo após o saque deve ser R$ 500,00");
     }
 
+    @Test
+    public void efetuarDepositoTeste(){
+        conta.depositar(500);
+        Assertions.assertEquals(1500, conta.getSaldo(), "O saldo após o depósito deve ser R$ 1500,00");
+    }
 
 }
 
